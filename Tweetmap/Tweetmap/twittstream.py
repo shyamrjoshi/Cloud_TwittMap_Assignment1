@@ -24,10 +24,10 @@ class twittListener(StreamListener):
 	def on_disconnect(self, notice):
 		print (self.notice)
 def main():
-	consumerkey = "oygXzSuenGjXqIYQbM9JkQDtB"
-	consumersecret = "Vevbs57eOUTEylxcUGSd8SQuY0YwN0wbXuu609xTsQfjVNpb2M"
-	accesstoken = "339171165-CAmLYzgLZValnV6rTvBqlbiDmhKhnoXBe3mxmcXf"
-	accesstokensecret = "ZZC3vswrblAiXdGe7zU18bwUslWguGgrlhXyesdkQsJ8y"
+	consumerkey = ""
+	consumersecret = ""
+	accesstoken = ""
+	accesstokensecret = ""
 	authhandler = OAuthHandler(consumerkey, consumersecret)
 	authhandler.set_access_token(accesstoken, accesstokensecret)
 	tweets = tweepy.Stream(authhandler, twittListener())
